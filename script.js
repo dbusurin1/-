@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
     
     const CATEGORIES = [
-        { name: "", color: "#FF6384", cashback: "10%", icon: "🛒" },
-        { name: "", color: "#36A2EB", cashback: "15%", icon: "👕" },
-        { name: "", color: "#FFCE56", cashback: "5%", icon: "📱" },
-        { name: "", color: "#4BC0C0", cashback: "20%", icon: "🍽️" },
-        { name: "", color: "#9966FF", cashback: "7%", icon: "✈️" },
-        { name: "", color: "#FF9F40", cashback: "12%", icon: "💄" },
+        { name: "Продукты", color: "#FF6384", cashback: "10%", icon: "🛒" },
+        { name: "Одежда", color: "#36A2EB", cashback: "15%", icon: "👕" },
+        { name: "Электроника", color: "#FFCE56", cashback: "5%", icon: "📱" },
+        { name: "Рестораны", color: "#4BC0C0", cashback: "20%", icon: "🍽️" },
+        { name: "Путешествия", color: "#9966FF", cashback: "7%", icon: "✈️" },
+        { name: "Красота", color: "#FF9F40", cashback: "12%", icon: "💄" },
     ];
 
     const PHRASES = [
