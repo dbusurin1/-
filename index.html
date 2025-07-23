@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СБП Покупки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/c/c7/%D0%A1%D0%91%D0%9F_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.svg/1200px-%D0%A1%D0%91%D0%9F_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.svg.png" class="logo" alt="НСПК">
+            <button class="connect-button">Подключить "Привет!"</button>
+        </div>
+        
+        <div class="top-section">
+            <div class="flame-container">
+                <img src="https://www.pngall.com/wp-content/uploads/15/Cartoon-Fire-PNG-Clipart.png" class="flame" id="flame">
+            </div>
+            <div class="current-category" id="current-category">
+                <div class="category-icon">🛒</div>
+                <div class="category-name">Продукты</div>
+                <div class="category-cashback">10% кэшбэк</div>
+            </div>
+        </div>
+        
+        <div class="middle-section">
+            <div class="mascot-container">
+                <div class="mascot" id="mascot">
+                    <div class="coin-face">
+                        <div class="coin-eyes">
+                            <div class="coin-eye left"></div>
+                            <div class="coin-eye right"></div>
+                        </div>
+                        <div class="coin-mouth"></div>
+                    </div>
+                    <div class="coin-shine"></div>
+                </div>
+                <div class="counters">
+                    <div class="counter" id="counter">Серия: 0</div>
+                    <div class="counter profit-counter" id="profit-counter">Выгода: 0₽</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="dots-container" id="dots-container">
+                <!-- Dots will be added by JavaScript -->
+            </div>
+            <div class="buttons-row">
+                <button class="pay-button" id="pay-button">
+                    <span>Оплатить</span>
+                    <div class="button-shine"></div>
+                </button>
+                <button class="decide-button" id="decide-button">
+                    <span>Не могу решиться</span>
+                    <div class="button-shine"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="speech-bubble" id="speech-bubble"></div>
+
+    <div class="modal" id="congrats-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Поздравляем!</h2>
+            <p class="modal-text">Вы успешно совершили все покупки! Теперь вы можете крутить колесо повышенного кэшбэка.</p>
+            <div class="wheel-container">
+                <div class="wheel" id="wheel"></div>
+                <div class="wheel-pointer"></div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button primary" id="spin-button">Крутить колесо</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 class="modal-title" id="result-title">Ваш выигрыш!</h2>
+            <p class="modal-text" id="result-text">Вы выиграли повышенный кэшбэк в категории "Продукты"!</p>
+            <div class="modal-buttons">
+                <button class="modal-button primary" id="close-button">Ура!</button>
+                <button class="modal-button secondary" id="spin-again-button">Крутить еще за 199р.</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="magic-ball-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Магический шар</h2>
+            <p class="modal-text">Задайте вопрос и нажмите на шар</p>
+            <div class="magic-ball-container">
+                <div class="magic-ball" id="magic-ball">
+                    <div class="magic-ball-inner">
+                        <div class="magic-ball-answer" id="magic-ball-answer">8</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button primary" id="close-magic-ball-button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
