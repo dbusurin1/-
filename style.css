@@ -52,8 +52,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    height: 80px;
+    padding: 10px 15px;
+    height: auto;
+    min-height: 60px;
+    
 }
 
 .flame-container {
@@ -106,12 +108,14 @@ body {
 }
 
 .middle-section {
-    flex: 1;
+    flex: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    height: auto;
+    padding: 10px 0;
 }
 
 .mascot-container {
